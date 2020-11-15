@@ -15,7 +15,7 @@ export default class App extends Component {
     this.state = {
       isReady: false,
       dato: "Preciona el botón para obtenér un dato",
-      animal: "cat", 
+      animal: "cat",
       currentImageIndex: 0
     }
   }
@@ -28,10 +28,10 @@ export default class App extends Component {
     this.setState({ isReady: true });
   }
   getAPI() {
-    if(this.state.currentImageIndex === 3){
-      this.setState({currentImageIndex: -1});
+    if (this.state.currentImageIndex === 3) {
+      this.setState({ currentImageIndex: -1 });
     }
-    this.setState( state => ({
+    this.setState(state => ({
       currentImageIndex: ++state.currentImageIndex,
       dato: "Loading..."
     }));
@@ -41,7 +41,7 @@ export default class App extends Component {
       }
     })
       .then(
-        response => { this.setState({dato: response.data.text})}
+        response => { this.setState({ dato: response.data.text }) }
       )
   }
   render() {
@@ -51,7 +51,7 @@ export default class App extends Component {
     return (
       <Container>
         <HeaderCustom title="Gatos" />
-        <Dato numeroRandom={this.state.currentImageIndex} texto={this.state.dato}/>
+        <Dato numeroRandom={this.state.currentImageIndex} texto={this.state.dato} />
         <Button block onPress={this.getAPI.bind(this)}>
           <Text>Obtener Dato</Text>
         </Button>
