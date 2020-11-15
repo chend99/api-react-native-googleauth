@@ -14,7 +14,7 @@ export default class App extends Component {
     super(props);
     this.state = {
       isReady: false,
-      dato: "Preciona el botón para obtenér un dato",
+      dato: "Preciona el botón para obtener un dato",
       animal: "cat",
       currentImageIndex: 0
     }
