@@ -3,7 +3,8 @@ import React, { Component } from "react";
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
 // Screens
-import DatoScreen from "../Screen/DatoScreen";
+import GatoScreen from "../Screen/GatoScreen";
+import PerroScreen from "../Screen/PerroScreen";
 import { DrawerContentScreen } from "../Screen/DrawerContentScreen";
 
 const Drawer = createDrawerNavigator();
@@ -24,7 +25,8 @@ export class DrawerNavigator extends Component {
                 
             >
             
-                <Drawer.Screen name="Gatos" component={DatoScreen} />
+                <Drawer.Screen name="Gatos" component={GatoScreen}/>
+                <Drawer.Screen name="Perros" component={PerroScreen}/>
             </Drawer.Navigator>
         );
     }

@@ -2,7 +2,6 @@ import { AppLoading } from 'expo';
 import { Ionicons } from '@expo/vector-icons';
 import React, { Component } from 'react';
 import * as Font from 'expo-font';
-import DatoScreen from './Screen/DatoScreen';
 import LoginScreen from './Screen/LoginScreen';
 import { DrawerNavigator } from './Navigator/DrawerNavigator'
 import { NavigationContainer } from '@react-navigation/native';

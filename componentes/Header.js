@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Header, Left, Body, Right, Title, Button, Icon } from 'native-base';
-import { DrawerActions } from '@react-navigation/native';
 
 export default class HeaderCustom extends Component {
     render() {

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { StyleSheet, Image } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 import HeaderCustom from '../componentes/Header';
-import { Container, Header, Content, Button, Text, Title, Left, Right, Body,Icon } from 'native-base';
+import { Container, Button, Text} from 'native-base';
 import * as Google from 'expo-google-app-auth'
 
 export default class LoginScreen extends Component {

@@ -16,9 +16,16 @@ export class DrawerContentScreen extends Component {
                 <DrawerContentScrollView {...this.props}>
                     <View style={styles.topDrawer}>
                         <DrawerItem 
-                            icon={() => <Icon type="material-community" name="home-outline" style={styles.icon}/>}
+                            icon={() => <Icon type="material-community" name="cat" style={styles.icon}/>}
                             label="Gatos"
                             onPress={() => this.props.navigation.navigate("Gatos")}
+                        />
+                    </View>
+                    <View style={styles.topDrawer}>
+                        <DrawerItem 
+                            icon={() => <Icon type="material-community" name="dog" style={styles.icon}/>}
+                            label="Perros"
+                            onPress={() => this.props.navigation.navigate("Perros")}
                         />
                     </View>
                 </DrawerContentScrollView>
